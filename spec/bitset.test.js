@@ -79,3 +79,24 @@ describe('Mixed BitSet of 5 bits', () => {
     it('7th bit should be out of index', () => expect(bitset.get(7)).toBe(null) );
 
 });
+
+
+describe('Initialize a bitSet with actual data', () => {
+
+    //crating a default bitset and getting its backing data 
+    let bitset = new BitSet([5,1]);
+    let data = bitset.getData();
+    
+    it('Bit array length', () => expect(bitset.length).toBe(64) );
+
+    it('Type of data', () => expect(Array.isArray(data)).toBeTruthy() );
+
+    it('Length of array data', () => expect(data.length).toBe(2) );
+
+    it('First bit value', () => expect(bitset.get(0)).toBe(true) );
+
+    it('second bit value false', () => expect(bitset.get(1)).toBe(false) );
+    
+    it('third bit value', () => expect(bitset.get(2)).toBe(true) );
+
+});
