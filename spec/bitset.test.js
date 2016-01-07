@@ -1,5 +1,5 @@
 jest.autoMockOff();
-let BitSet = require('../BitSet');
+let BitSet = require('../lib/BitSet');
 
 describe('BitSet of 1 integer', () => {
 
