@@ -1,4 +1,17 @@
 {
+  "name": "BitSetJS",
+  "description": "JavaScript implementation of bit arrays",
+  "version": "0.1.0",
+  "author": "Maximiliano Benedetto <mbenedetto212@gmail.com> (http://www.mbenedetto.com)",
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:maxijb/BitSetJS.git"
+    },
+    "keywords": ["bit array", "bit-array", "bit vector", "bitset", "bitmap", "bitstring"],
+    "main": "./lib/BitSet.js",
+    "directories": {
+        "lib": "./lib"
+    },
   "devDependencies": {
     "babel-jest": "*",
     "babel-preset-es2015": "^6.3.13",
