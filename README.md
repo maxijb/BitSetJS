@@ -27,13 +27,16 @@ Internally, the library stores the bit array, into 32 bits integers objects. So,
 You can initialiaze a BitSet with threee different constructors:
 
 **BitSet(size=32 :int, value=0 :boolean)**
+
 Creates a new bit array with the given size and the selected value as default. Value can be 0 or 1. Ex: 
 `new Bitset(3, 1).stringify() == '111'`
 
 **BitSet(binary : string)**
+
 Takes a binary number *0101*, and converts it to the correspondent bits in the array. The rightmost carachter is the bit 0.
 
 **BitSet(ints : array[int])**
+
 Sets the the array of integers as the backing stored data of the bitset. Ex:
 `new BitSet([3]).stringify() == '00000000000000000000000000000011';`
 
