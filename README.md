@@ -81,6 +81,10 @@ Returns the total number of bits set to 1 in this BitSet.
 Inverts this BitSet.
 
 
+## How to include
+
+This library has been writen in ES6. However, an ES5 version (compiled by babel 5) is also distributed.
+
 
 ## Licence
 
