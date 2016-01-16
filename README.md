@@ -85,6 +85,11 @@ Inverts this BitSet.
 
 This library has been writen in ES6. However, an ES5 version (compiled by babel 5) is also distributed.
 
+Also, by npm:
+
+```
+> npm install bit-array
+```
 
 ## Licence
 
