@@ -44,31 +44,40 @@ Sets the the array of integers as the backing stored data of the bitset. Ex:
 The operations supported by the BitSet:
 
 **length**
+
 This property contains the number of bits in the bitset.
 
 **set(N)**
+
 Sets the N bit to 1. Returns `true` if the operation was succesful. 
 
 **get(N)**
+
 Returns the value of the bit at `N` (boolean)
 
 **toggle(N)**
+
 Toggles (inverts) the bit at `N` index. 
 
 **toString()**
+
 Returns "[object BitSet]" in order to identify the object as a Bitset.
 
 **stringify()**
+
 Returns the binary representation of the bitSet.
 
 **getData()**
+
 Gets the data with the integers holding the bits information. Ex: 
 `new BitSet("101").getData() // [5]`
 
 **count()**
+
 Returns the total number of bits set to 1 in this BitSet.
 
 **invert()**
+
 Inverts this BitSet.
 
 
