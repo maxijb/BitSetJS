@@ -1,5 +1,5 @@
 {
-  "name": "BitSetJS",
+  "name": "bit-set-js",
   "description": "JavaScript implementation of bit arrays",
   "version": "0.1.0",
   "author": "Maximiliano Benedetto <mbenedetto212@gmail.com> (http://www.mbenedetto.com)",
