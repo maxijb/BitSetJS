@@ -128,4 +128,5 @@ describe('Initialize a bitSet with a string', () => {
     
     it('count bits 1s', () => expect(bitset.count()).toBe(2));
     
+
 });
