@@ -74,7 +74,7 @@ describe('Mixed BitSet of 5 bits', () => {
 
     it('toString object bitset', () => expect(bitset.toString()).toBe("[object BitSet]"));
     
-    it('stringify 5 bits', () => expect(bitset.stringify()).toBe("11010"));
+    it('stringify 5 bits', () => expect(bitset.stringify()).toBe("01011"));
 
     it('7th bit should be out of index', () => expect(bitset.get(7)).toBe(null) );
 
@@ -99,4 +99,33 @@ describe('Initialize a bitSet with actual data', () => {
     
     it('third bit value', () => expect(bitset.get(2)).toBe(true) );
 
+});
+
+describe('Initialize a bitSet with a string', () => {
+
+    //crating a default bitset and getting its backing data 
+    let bitset = new BitSet("0101");
+    let other = new BitSet("1010");
+    let data = bitset.getData();
+
+    it('Bit array length', () => expect(bitset.length).toBe(4) );
+
+    it('Type of data', () => expect(Array.isArray(data)).toBeTruthy() );
+
+    it('Length of array data', () => expect(data.length).toBe(1) );
+
+    it('First bit value', () => expect(bitset.get(0)).toBeTruthy() );
+
+    it('second bit value false', () => expect(bitset.get(1)).toBeFalsy() );
+    
+    it('third bit value', () => expect(bitset.get(2)).toBeTruthy() );
+    
+    it('second bit value false', () => expect(bitset.get(3)).toBeFalsy() );
+
+    it('stringify equals', () => expect(bitset.stringify()).toBe("0101"));
+
+    it('invert bit array', () => expect(bitset.invert().stringify()).toBe("1010"));
+    
+    it('count bits 1s', () => expect(bitset.count()).toBe(2));
+    
 });
