@@ -88,7 +88,7 @@ This library has been writen in ES6. However, an ES5 version (compiled by babel 
 Also, by npm:
 
 ```
-> npm install bit-array
+> npm install bit-set-js
 ```
 
 ## Licence
