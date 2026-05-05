@@ -1,16 +1,21 @@
-# BitSetJS
-Library to create and deal with a BitSet in ES6.
-BitSet creates a bit array, which allows us to store a big amount of binary flags in a very memory-wise efficient manner.
+# BitSetJS test
+
+Library to create and deal with a BitSet in ES6. BitSet creates a bit array, which allows us to store a big amount of binary flags in a very memory-wise efficient manner.
 
 This library supports these operations:
 
 - getting, setting and toggling of individual bits
+
 - counting how many 1s bits are in the array
+
 - serialization to and from strings (`001101` binary format)
-- serialization to and from arrays 
+
+- serialization to and from arrays
+
 - Use in the Browser, or as a CommonJS module
 
 ## Usage
+
 ```
 a = new BitArray(6);
 a.set(0);
@@ -28,18 +33,15 @@ You can initialiaze a BitSet with threee different constructors:
 
 **BitSet(size=32 :int, value=0 :boolean)**
 
-Creates a new bit array with the given size and the selected value as default. Value can be 0 or 1. Ex: 
-`new Bitset(3, 1).stringify() == '111'`
+Creates a new bit array with the given size and the selected value as default. Value can be 0 or 1. Ex: `new Bitset(3, 1).stringify() == '111'`
 
 **BitSet(binary : string)**
 
 Takes a binary number *0101*, and converts it to the correspondent bits in the array. The rightmost carachter is the bit 0.
 
-**BitSet(ints : array[int])**
+**BitSet(ints : array\[int\])**
 
-Sets the the array of integers as the backing stored data of the bitset. Ex:
-`new BitSet([3]).stringify() == '00000000000000000000000000000011';`
-
+Sets the the array of integers as the backing stored data of the bitset. Ex: `new BitSet([3]).stringify() == '00000000000000000000000000000011';`
 
 The operations supported by the BitSet:
 
@@ -49,7 +51,7 @@ This property contains the number of bits in the bitset.
 
 **set(N)**
 
-Sets the N bit to 1. Returns `true` if the operation was succesful. 
+Sets the N bit to 1. Returns `true` if the operation was succesful.
 
 **get(N)**
 
@@ -57,11 +59,11 @@ Returns the value of the bit at `N` (boolean)
 
 **toggle(N)**
 
-Toggles (inverts) the bit at `N` index. 
+Toggles (inverts) the bit at `N` index.
 
 **toString()**
 
-Returns "[object BitSet]" in order to identify the object as a Bitset.
+Returns "\[object BitSet\]" in order to identify the object as a Bitset.
 
 **stringify()**
 
@@ -69,8 +71,7 @@ Returns the binary representation of the bitSet.
 
 **getData()**
 
-Gets the data with the integers holding the bits information. Ex: 
-`new BitSet("101").getData() // [5]`
+Gets the data with the integers holding the bits information. Ex: `new BitSet("101").getData() // [5]`
 
 **count()**
 
@@ -79,7 +80,6 @@ Returns the total number of bits set to 1 in this BitSet.
 **invert()**
 
 Inverts this BitSet.
-
 
 ## How to include
 
