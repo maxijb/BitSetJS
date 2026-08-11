@@ -1,4 +1,4 @@
-# BitSetJS test 22 33 44 66 77 88 99
+# BitSetJS test 22 33 44 66 77 88 99 00
 
 Library to create and deal with a BitSet in ES6. BitSet creates a bit array, which allows us to store a big amount of binary flags in a very memory-wise efficient manner.
 
@@ -63,7 +63,7 @@ Toggles (inverts) the bit at `N` index.
 
 **toString()**
 
-Returns "\[object BitSet\]" in order to identify the object as a Bitset.
+Returns “\[object BitSet\]” in order to identify the object as a Bitset.
 
 **stringify()**
 
