@@ -77,6 +77,18 @@ Gets the data with the integers holding the bits information. Ex: `new BitSet("1
 
 Returns the total number of bits set to 1 in this BitSet.
 
+**and(other)**
+
+Combines this BitSet with another BitSet of the same length using bitwise AND. The current BitSet is updated and returned.
+
+**or(other)**
+
+Combines this BitSet with another BitSet of the same length using bitwise OR. The current BitSet is updated and returned.
+
+**xor(other)**
+
+Combines this BitSet with another BitSet of the same length using bitwise XOR. The current BitSet is updated and returned.
+
 **invert()**
 
 Inverts this BitSet.

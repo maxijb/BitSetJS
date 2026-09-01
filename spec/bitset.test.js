@@ -130,3 +130,35 @@ describe('Initialize a bitSet with a string', () => {
     
 
 });
+
+describe('Bitwise operations', () => {
+
+    it('combines BitSets with AND', () => {
+        let bitset = new BitSet("1100");
+        let other = new BitSet("1010");
+
+        expect(bitset.and(other).stringify()).toBe("1000");
+    });
+
+    it('combines BitSets with OR', () => {
+        let bitset = new BitSet("1100");
+        let other = new BitSet("1010");
+
+        expect(bitset.or(other).stringify()).toBe("1110");
+    });
+
+    it('combines BitSets with XOR', () => {
+        let bitset = new BitSet("1100");
+        let other = new BitSet("1010");
+
+        expect(bitset.xor(other).stringify()).toBe("0110");
+    });
+
+    it('rejects BitSets with different lengths', () => {
+        let bitset = new BitSet("1100");
+        let other = new BitSet("10");
+
+        expect(() => bitset.and(other)).toThrow("Only can modify BitSets with the same length");
+    });
+
+});
